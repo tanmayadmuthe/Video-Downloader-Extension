@@ -1,0 +1,25 @@
+{
+    "name": "Video Stream Downloader",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["webRequest", "downloads", "scripting", "tabs"],
+    "host_permissions": ["*://*/*"],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "popup/popup.html",
+      "default_icon": "assets/icon.png"
+    },
+    "content_scripts": [{
+      "matches": ["*://*/*"],
+      "js": ["content/content.js"],
+      "run_at": "document_end"
+    }],
+    "web_accessible_resources": [{
+      "resources": ["scripts/*"],
+      "matches": ["<all_urls>"]
+    }]
+  }
+  
