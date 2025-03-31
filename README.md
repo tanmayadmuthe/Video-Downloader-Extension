@@ -33,7 +33,7 @@ video-downloader-extension/
 ## Installation
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/your-repo/video-stream-downloader.git
+git clone https://github.com/tanmayadmuthe/Video-Downloader-Extension.git
 cd video-stream-downloader
 ```
 
